@@ -1,0 +1,185 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --grey: #e6e6e6;
+  --green: #a5c639;
+  --black: #000000;
+  --padding: 20px;
+  --font: "Courier New", Courier, monospace;
+}
+
+body {
+}
+h1,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  margin: 1;
+  text-align: center;
+  padding: var(--padding);
+}
+
+p {
+  font-size: 16px;
+  font-family: var(--font);
+}
+.nav {
+  background: var(--green);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Intro */
+.section__intro {
+  width: 100%;
+  height: 200px;
+  background: url(./img/intro.jpeg) rgba(255, 255, 255, 0.5);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section__intro--title {
+  font-size: 50px;
+  font-weight: 200;
+  color: var(--black);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  padding-top: 50px;
+}
+
+/* Experiences */
+.experiences__grid {
+  display: grid;
+  grid-template-columns: 10% 4fr;
+  grid-row-gap: 20px;
+  align-content: center;
+  padding: 30px;
+  background: var(--grey);
+}
+
+.experiences__img {
+  width: 30px;
+  height: 30px;
+  display: block;
+  padding: 0;
+  margin: 0;
+  justify-items: center;
+  place-self: center;
+}
+
+.section__experiences--text {
+  place-self: start;
+  justify-items: center;
+}
+
+/* About me */
+.section__about--subtitle {
+  font-family: var(--font);
+  font-size: 25px;
+  text-align: center;
+  background: var(--green);
+  margin: 0;
+}
+
+.section__about--box {
+  display: flex;
+  padding: 20px;
+  background: var(--grey);
+}
+
+.section__about--boxitem {
+  list-style: none;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.section__about--content {
+  font-family: var(--font);
+  font-size: 15px;
+}
+
+/* My work */
+.section__projects--items {
+  display: grid;
+  grid-template-columns: 10% 80%;
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+
+  padding: 10px 0 10px 0;
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center;
+  background: var(--grey);
+}
+.section__projects--title {
+  font-family: var(--font);
+  font-size: 25px;
+  margin: 0 auto;
+  background: var(--green);
+  text-align: center;
+}
+
+.project_button {
+  width: 90px;
+  height: 90px;
+  background-color: var(--grey);
+  border: var(--grey);
+  border-radius: 50%;
+}
+
+.section__projects--link {
+  color: var(--black);
+  text-decoration: none;
+  font-family: var(--font);
+  font-size: 50px;
+}
+
+.project_button:hover {
+  background: var(--green);
+}
+.section__projects--content {
+  font-family: var(--font);
+
+  text-align: center;
+  margin: 0 auto;
+  background: var(--light-blue);
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  font-family: var(--font);
+  background: var(--green);
+  padding: 10px;
+  text-align: center;
+}
+
+.footer-info {
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+}
+#footer-mail {
+  text-decoration: none;
+  color: #000000;
+}
+
+#footer-phone {
+  display: inline;
+}
+.icons {
+  height: 20px;
+  width: 20px;
+
+  margin: 0 auto;
+}
