@@ -47,7 +47,7 @@ p {
 
 .section__intro--title {
   font-size: 50px;
-  font-weight: 200;
+  font-weight: 100;
   color: var(--black);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
@@ -75,6 +75,7 @@ p {
 }
 
 .section__experiences--text {
+  padding: 20px;
   place-self: start;
   justify-items: center;
 }
@@ -171,7 +172,7 @@ p {
 }
 #footer-mail {
   text-decoration: none;
-  color: #000000;
+  color: var(--black);
 }
 
 #footer-phone {
